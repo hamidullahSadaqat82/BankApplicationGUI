@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/25.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Customer.CustomerController">
+   <children>
+      <MenuBar prefHeight="27.0" prefWidth="986.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#TransferMoney" text="Transfer money" />
+                  <MenuItem mnemonicParsing="false" onAction="#backToCustomer" text="Back to Customer" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#howToTransferTheBalance" text="About transfer balance" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label id="transferInformation" layoutX="327.0" layoutY="302.0" text="Enter another account id number and your amount" />
+      <Label id="transferIdTextFiledLabel" layoutX="327.0" layoutY="339.0" text="Another ID" />
+      <Label id="transferAmountTextFiledLabel" layoutX="327.0" layoutY="380.0" text="Amount" />
+      <TextField fx:id="anotherAccountNumberForMoney" layoutX="410.0" layoutY="335.0" prefHeight="24.0" prefWidth="242.0" />
+      <TextField fx:id="amountForAnotherAccount" layoutX="410.0" layoutY="376.0" prefHeight="24.0" prefWidth="242.0" />
+   </children>
+</AnchorPane>

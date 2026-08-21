@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/25.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Admin.AdminGUIController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="986.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ReadAdminInformation" text="Read information" />
+                  <MenuItem mnemonicParsing="false" onAction="#backToAdmin" text="Back to admin" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#closeReadAdminInformation" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#helpForReadAdminInformation" text="About read information" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="adminIdForReadInformation" layoutX="241.0" layoutY="363.0" prefHeight="37.0" prefWidth="504.0" promptText="Admin ID">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Label id="readAdminInformationEnterYourAccountID" layoutX="388.0" layoutY="323.0" text="Enter your account ID" />
+   </children>
+</AnchorPane>

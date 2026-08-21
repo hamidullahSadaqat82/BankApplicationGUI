@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/25.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Customer.CustomerController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="986.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#DepositBalance" text="Add Amount" />
+                  <MenuItem mnemonicParsing="false" onAction="#backToCustomer" text="Back to customer" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#howToAddTheBalance" text="About add balance" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label id="depositInformationLabel" layoutX="332.0" layoutY="360.0" text="Enter amount which you want to add the account" />
+      <Label id="depositTextFieldLabel" layoutX="332.0" layoutY="420.0" text="Amount" />
+      <TextField fx:id="amountForCustomerAccount" layoutX="408.0" layoutY="416.0" prefHeight="24.0" prefWidth="245.0" />
+   </children>
+</AnchorPane>

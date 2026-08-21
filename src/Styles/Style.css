@@ -1,0 +1,538 @@
+.root {
+    -fx-background-color: #434242 !important;
+    -fx-align-items: center;
+}
+
+
+/*Button Styles*/
+.button {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-text-fill: #07f3f3;
+}
+
+
+.button:hover {
+    -fx-background-color: #333333;
+    -fx-effect: dropshadow(three-pass-box, #00FFD5, 15, 0.5, 0, 0);
+}
+
+
+.button:armed {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-border-color: #333333;
+    -fx-border-width: 2px;
+}
+
+
+
+
+
+/*Text Fields Style*/
+.text-field {
+    -fx-text-fill: #00FFD5;
+    -fx-background-color: #292828 !important;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+
+
+
+/*Dialog and alerts Styles*/
+.dialog-pane {
+    -fx-background-color: #434242  !important;
+    -fx-text-fill: #07f3f3;
+}
+.dialog-pane .header-panel {
+    -fx-background-color: #434242  !important;
+
+}
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #07f3f3 !important;
+    -fx-font-size: 30 !important;
+
+}
+.dialog-pane .button {
+    -fx-background-color: #434242 !important;
+    -fx-text-fill: #07f3f3 !important;
+
+}
+
+.dialog-pane .content{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 16px;
+}
+
+
+
+/*label Styles*/
+/*Admin*/
+#mainUserName{
+    -fx-text-fill:#07f3f3;
+    -fx-font-size: 14px;
+}
+#mainPassword {
+    -fx-text-fill:#07f3f3;
+    -fx-font-size: 14px;
+}
+
+#adminPasswordChangerNewPassword {
+    -fx-text-fill:#07f3f3;
+    -fx-font-size: 14px;
+}
+
+#adminPasswordChangerConformPassword{
+    -fx-text-fill:#07f3f3;
+    -fx-font-size: 14px;
+}
+
+#adminPasswordFieldUserName{
+    -fx-text-fill:#07f3f3;
+    -fx-font-size: 14px;
+}
+
+#adminPasswordFieldPassword {
+    -fx-text-fill:#07f3f3;
+    -fx-font-size: 14px;
+}
+
+#adminForgetPasswordQuestion{
+    -fx-text-fill:#07f3f3;
+    -fx-font-size: 14px;
+}
+
+
+#adminMainName{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#adminMainFName {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#adminMainEmail{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#adminMainPhone{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#adminMainAddress{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#adminMainJob {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+
+
+#adminMainNameResult {
+    -fx-text-fill: #16ff1a;
+    -fx-font-size: 14px;
+}
+
+#adminMainFNameResult {
+    -fx-text-fill: #16ff1a;
+    -fx-font-size: 14px;
+}
+
+#adminMainEmailResult{
+    -fx-text-fill: #16ff1a;
+    -fx-font-size: 14px;
+}
+
+#AdminMainPhoneResult {
+    -fx-text-fill: #16ff1a;
+    -fx-font-size: 14px;
+}
+
+#adminMainAddressResult {
+    -fx-text-fill: #16ff1a;
+    -fx-font-size: 14px;
+}
+
+#adminMainJobResult{
+    -fx-text-fill: #16ff1a;
+    -fx-font-size: 14px;
+}
+
+
+#changeAdminPasswordAdminId {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#changeAdminPasswordNewPassword {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#changeAdminPasswordConformPassword {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#readAdminInformationEnterYourAccountID {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 18px;
+}
+
+
+
+#adminMainAdminAnchorAdminCountLabel{
+    -fx-font-size: 20px;
+    -fx-text-fill: #12fa16;
+}
+
+#adminMainAdminAnchorAdminCount{
+    -fx-font-size: 20px;
+    -fx-text-fill: #12fa16;
+}
+#adminMainAdminCount{
+    -fx-background-color: #2D3238;
+    -fx-background-radius: 15px;
+    -fx-border-color: #00FFCC;
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+}
+#adminMainAdminCount:hover{
+    -fx-background-color: #333333;
+    -fx-border-color: #12fa16;
+    -fx-effect: dropshadow(three-pass-box, #00FFD5, 15, 0.5, 0, 0);
+}
+
+
+
+
+
+#adminAnchorPaneManagerCount{
+    -fx-background-color: #2D3238;
+    -fx-background-radius: 15px;
+    -fx-border-color: #00FFCC;
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+}
+
+#adminAnchorPaneManagerCount:hover{
+    -fx-background-color: #333333;
+    -fx-border-color: #12fa16;
+    -fx-effect: dropshadow(three-pass-box, #00FFD5, 15, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+#adminMainManagerAnchorManagerCountLabel{
+    -fx-font-size: 20px;
+    -fx-text-fill: #12fa16;
+}
+
+#adminMainManagerAnchorManagerCount{
+    -fx-font-size: 20px;
+    -fx-text-fill: #12fa16;
+}
+
+
+#adminAnchorPaneCustomerCount{
+    -fx-background-color: #2D3238;
+    -fx-background-radius: 15px;
+    -fx-border-color: #00FFCC;
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+}
+#adminAnchorPaneCustomerCount:hover{
+    -fx-background-color: #333333;
+    -fx-border-color: #12fa16;
+    -fx-effect: dropshadow(three-pass-box, #00FFD5, 15, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+#adminMainCustomerAnchorCustomerCountLabel{
+    -fx-font-size: 20px;
+    -fx-text-fill: #12fa16;
+}
+
+#adminMainCustomerAnchorCustomerCount{
+    -fx-font-size: 20px;
+    -fx-text-fill: #12fa16;
+}
+
+#SystemSituate{
+    -fx-background-color: #2D3238;
+    -fx-background-radius: 15px;
+    -fx-border-color: #00FFCC;
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+}
+
+#SystemSituate:hover{
+    -fx-background-color: #333333;
+    -fx-border-color: #12fa16;
+    -fx-effect: dropshadow(three-pass-box, #00FFD5, 15, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+#adminMainAnchorPaneSystemStatues{
+    -fx-font-size: 20px;
+    -fx-text-fill: #12fa16;
+}
+
+#ActiveOrDontActive{
+    -fx-font-size: 20px;
+    -fx-text-fill: #12fa16;
+}
+
+
+#adminAnchorPaneTotalMoney{
+    -fx-background-color: #2D3238;
+    -fx-background-radius: 15px;
+    -fx-border-color: #00FFCC;
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+}
+
+#adminAnchorPaneTotalMoney:hover{
+    -fx-background-color: #333333;
+    -fx-border-color: #12fa16;
+    -fx-effect: dropshadow(three-pass-box, #00FFD5, 15, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+
+#adminAnchorPaneTotalLoan{
+    -fx-background-color: #2D3238;
+    -fx-background-radius: 15px;
+    -fx-border-color: #00FFCC;
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+}
+
+
+#adminAnchorPaneTotalLoan:hover{
+    -fx-background-color: #333333;
+    -fx-border-color: #12fa16;
+    -fx-effect: dropshadow(three-pass-box, #00FFD5, 15, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+
+/*په دی ځای کی د منیجر فیلډس ایډیټ شوی دی کوم چی اډمین پوری تړاو لری*/
+#managerId {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#managerTid {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#managerName {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#managerFName {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#managerPhone {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#managerEmail {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#managerPassword {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#managerContry {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#managerProvence {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#managerStreet {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#deleteManagerAccountEnterManagerAccountId {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#readManagerInformationEnterManagerAccountId{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#changeManagerPasswordManagerIdNumber {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#changeManagerPasswordNewPassword {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#changeManagerPasswordConformPassword{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+
+
+/*Customer*/
+#addCustomerAccountId {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#addCustomerAccountTid {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#addCustomerAccountName {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#addCustomerAccountFName {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#addCustomerAccountPhone {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#addCustomerAccountEmail {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#addCustomerAccountPassword {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#addCustomerAccountContry {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#addCustomerAccountProvence {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#addCustomerAccountStreet {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#changeCustomerPasswordCustomerIdNumber {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#changeCustomerPasswordNewPassword {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+#changeCustomerPasswordConformPassword {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#readCustomerInformationEnterCustomerAccountId{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 18px;
+}
+
+#deleteCustomerAccountEnterCustomerAccountId {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 18px;
+}
+
+
+
+
+
+#depositInformationLabel {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#depositTextFieldLabel {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#transferInformation {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#transferIdTextFiledLabel {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#transferAmountTextFiledLabel {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#withdrawInformation {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#withdrawAmountTextFieldLabel {
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+
+
+
+
+
+
+/*Manager Manin*/
+#managerIdForLogin{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+#MainDishbord {
+        -fx-border: 5px;
+        -fx-border-color: #403f3f;
+}
+
+
+
+
+
+
+
+
+#customerTotalBalance{
+    -fx-text-fill: #07f3f3;
+    -fx-font-size: 14px;
+}
+
+
+
+
+
+
+
+
+

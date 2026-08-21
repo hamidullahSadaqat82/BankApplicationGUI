@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/25.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Admin.AdminCustomerPartController">
+   <children>
+      <BorderPane fx:id="customerDashboard" layoutY="26.0" prefHeight="695.0" prefWidth="200.0" visible="false">
+         <center>
+            <AnchorPane prefHeight="270.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="25.0" layoutY="61.0" mnemonicParsing="false" onAction="#deleteCustomerAccount" text="Delete Customer Account" />
+                  <Button layoutX="18.0" layoutY="147.0" mnemonicParsing="false" onAction="#readCustomerInformation" text="Read Customer Information" />
+                  <Button layoutX="16.0" layoutY="231.0" mnemonicParsing="false" onAction="#changeCustomerPassword" text="Changer Customer Password" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="986.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#setCustomerInformation" text="Save Entered information" />
+                  <MenuItem fx:id="backTOAdminFormCustomer" mnemonicParsing="false" onAction="#backToAdmin" text="Back to admin" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#CloseAdminCustomer" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <CheckMenuItem mnemonicParsing="false" onAction="#HideAndShowCustomerDashboard" text="Show Dishbord" />
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#helpForAddCustomerAccount" text="About add Customer account" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="customerId" layoutX="387.0" layoutY="181.0" prefHeight="35.0" prefWidth="316.0" promptText="ID" />
+      <TextField fx:id="customerTid" layoutX="387.0" layoutY="219.0" prefHeight="35.0" prefWidth="316.0" promptText="TID" />
+      <TextField fx:id="customerName" layoutX="387.0" layoutY="257.0" prefHeight="35.0" prefWidth="316.0" promptText="Name" />
+      <TextField fx:id="customerFName" layoutX="387.0" layoutY="295.0" prefHeight="35.0" prefWidth="316.0" promptText="Father's name" />
+      <TextField fx:id="customerPhone" layoutX="387.0" layoutY="333.0" prefHeight="35.0" prefWidth="316.0" promptText="Phone" />
+      <TextField fx:id="customerEmail" layoutX="387.0" layoutY="371.0" prefHeight="35.0" prefWidth="316.0" promptText="Email" />
+      <TextField fx:id="customerPassword" layoutX="387.0" layoutY="409.0" prefHeight="35.0" prefWidth="316.0" promptText="Password" />
+      <TextField fx:id="customerContry" layoutX="387.0" layoutY="447.0" prefHeight="35.0" prefWidth="316.0" promptText="Contry" />
+      <TextField fx:id="customerProvence" layoutX="387.0" layoutY="485.0" prefHeight="35.0" prefWidth="316.0" promptText="Provence" />
+      <TextField fx:id="customerStreet" layoutX="387.0" layoutY="522.0" prefHeight="35.0" prefWidth="316.0" promptText="Street number" />
+      <Label id="addCustomerAccountId" layoutX="303.0" layoutY="192.0" text="ID" />
+      <Label id="addCustomerAccountTid" layoutX="303.0" layoutY="230.0" text="TID" />
+      <Label id="addCustomerAccountName" layoutX="303.0" layoutY="268.0" text="Name" />
+      <Label id="addCustomerAccountFName" layoutX="303.0" layoutY="306.0" text="FName" />
+      <Label id="addCustomerAccountPhone" layoutX="303.0" layoutY="344.0" text="Phone" />
+      <Label id="addCustomerAccountEmail" layoutX="303.0" layoutY="382.0" text="Email " />
+      <Label id="addCustomerAccountPassword" layoutX="303.0" layoutY="420.0" text="Password" />
+      <Label id="addCustomerAccountContry" layoutX="303.0" layoutY="458.0" text="Contry" />
+      <Label id="addCustomerAccountProvence" layoutX="303.0" layoutY="496.0" text="Provence" />
+      <Label id="addCustomerAccountStreet" layoutX="303.0" layoutY="533.0" text="Street" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/25.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Customer.CustomerController">
+   <children>
+      <MenuBar prefHeight="27.0" prefWidth="986.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#WithdrawBalance" text="Withdraw" />
+                  <MenuItem mnemonicParsing="false" onAction="#backToCustomer" text="Back to customer" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#howToWithdrawBalance" text="About withdraw balance" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label id="withdrawInformation" layoutX="364.0" layoutY="323.0" text="Enter amount wich you want to withdraw" />
+      <Label id="withdrawAmountTextFieldLabel" layoutX="364.0" layoutY="392.0" text="Amount" />
+      <TextField fx:id="amountForCustomerWithdraw" layoutX="427.0" layoutY="388.0" prefHeight="24.0" prefWidth="201.0" />
+   </children>
+</AnchorPane>

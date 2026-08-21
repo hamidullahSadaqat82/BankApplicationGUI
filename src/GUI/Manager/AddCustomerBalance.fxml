@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/25.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Manager.ManagerGUIController">
+   <children>
+      <MenuBar prefHeight="27.0" prefWidth="986.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddCustomerBalance" text="Add Balance" />
+                  <MenuItem mnemonicParsing="false" onAction="#backToCustomer" text="Back to Customer" />
+                  <MenuItem mnemonicParsing="false" onAction="#backToManagerMain" text="Back to Manager" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="277.0" layoutY="328.0" text="Customer ID" />
+      <Label layoutX="277.0" layoutY="375.0" text="Balance" />
+      <TextField fx:id="customerIdForBalance" layoutX="394.0" layoutY="319.0" prefHeight="34.0" prefWidth="315.0" promptText="xxxxxxx" />
+      <TextField fx:id="customerBalance" layoutX="394.0" layoutY="366.0" prefHeight="34.0" prefWidth="315.0" promptText="0.0" />
+   </children>
+</AnchorPane>
